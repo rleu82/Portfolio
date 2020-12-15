@@ -5,6 +5,8 @@ module.exports = {
       options: {
         projectId: "vdu3x0x3",
         dataset: "production",
+        watchMode: true,
+        token: process.env.SANITY_TOKEN,
       },
     },
     "gatsby-plugin-styled-components",
@@ -13,13 +15,5 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
-    },
   ],
 };
