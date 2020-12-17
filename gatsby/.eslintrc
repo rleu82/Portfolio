@@ -1,7 +1,7 @@
 {
     "parser": "babel-eslint",
-    "extends": ["plugin:prettier/recommended"],
-
+    // "extends": ["plugin:prettier/recommended"],
+    "extends": ["airbnb", "prettier", "prettier/react", "wesbos"],
     "plugins": ["prettier"],
 
     "rules": {
