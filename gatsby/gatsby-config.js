@@ -1,19 +1,30 @@
 module.exports = {
   plugins: [
     {
-      resolve: "gatsby-source-sanity",
+      resolve: 'gatsby-source-sanity',
       options: {
-        projectId: "vdu3x0x3",
-        dataset: "production",
+        projectId: 'vdu3x0x3',
+        dataset: 'production',
         watchMode: true,
         token: process.env.SANITY_TOKEN,
       },
     },
-    "gatsby-plugin-styled-components",
-    "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Source Sans Pro`,
+            variants: [`300`, `400`, `700`],
+          },
+        ],
+      },
+    },
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
   ],
 };
