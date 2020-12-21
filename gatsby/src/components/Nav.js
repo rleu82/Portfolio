@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import Logo from './Logo';
 
 const NavStyles = styled.nav`
+  text-align: center;
+  max-width: 100%;
   margin-bottom: 4rem;
+  }
   a {
     font-size: 2rem;
     text-decoration: none;
@@ -15,33 +19,42 @@ const NavStyles = styled.nav`
     margin-top: 3rem;
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr auto 1fr 1fr;
+    grid-template-columns: auto auto auto auto auto;
     grid-gap: 2rem;
     align-items: center;
-    text-align: center;
+    justify-items: center;
   }
+`;
+
+const NavInnerStyles = styled.div`
+  max-width: 500px;
+  margin: 0 auto 0 auto;
 `;
 
 export default function Nav() {
   return (
     <NavStyles>
-      <ul>
-        <li>
-          <Link to="/">home</Link>
-        </li>
-        <li>
-          <Link to="/">portfolio</Link>
-        </li>
-        <li>
-          <Link to="/">Robert</Link>
-        </li>
-        <li>
-          <Link to="/">about</Link>
-        </li>
-        <li>
-          <Link to="/">contact</Link>
-        </li>
-      </ul>
+      <NavInnerStyles>
+        <ul>
+          <li>
+            <Link to="/">home</Link>
+          </li>
+          <li>
+            <Link to="/">portfolio</Link>
+          </li>
+          <li>
+            <Link to="/">
+              <Logo />
+            </Link>
+          </li>
+          <li>
+            <Link to="/">about</Link>
+          </li>
+          <li>
+            <Link to="/">contact</Link>
+          </li>
+        </ul>
+      </NavInnerStyles>
     </NavStyles>
   );
 }

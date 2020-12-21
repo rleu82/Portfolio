@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import styled from 'styled-components';
 import Footer from './Footer';
 import Nav from './Nav';
 // global reset css , global and typography
@@ -7,14 +8,21 @@ import 'normalize.css';
 import GlobalStyles from '../styles/GlobalStyles';
 import Typography from '../styles/Typography';
 
+const SiteStyles = styled.div`
+  max-width: 1100px;
+  margin: 2rem auto 2rem auto;
+`;
+
 export default function Layout({ children }) {
   return (
-    <div>
+    <>
       <GlobalStyles />
       <Typography />
-      <Nav />
-      {children}
-      <Footer />
-    </div>
+      <SiteStyles>
+        <Nav />
+        {children}
+        <Footer />
+      </SiteStyles>
+    </>
   );
 }
