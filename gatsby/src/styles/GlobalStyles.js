@@ -6,6 +6,9 @@ const GlobalStyles = createGlobalStyle`
     --black: #2E2E2E;
     --white: #fff;
     --grey: #efefef;
+    /* width of website */
+    --fullsize: 100%;
+    --maxSize: 1100px;
   }
   html {
     font-size: 10px;
@@ -55,11 +58,6 @@ const GlobalStyles = createGlobalStyle`
     max-width: 100%;
   }
 
-  .tilt {
-    transform: rotate(-2deg);
-    position: relative;
-    display: inline-block;
-  }
 
 `;
 

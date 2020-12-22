@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import Footer from './Footer';
 import Nav from './Nav';
 // global reset css , global and typography

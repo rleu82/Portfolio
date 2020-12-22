@@ -6,7 +6,7 @@ import Logo from './Logo';
 const NavStyles = styled.nav`
   text-align: center;
   max-width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
   }
   a {
     font-size: 2rem;
@@ -16,7 +16,7 @@ const NavStyles = styled.nav`
     }
   }
   ul {
-    margin-top: 3rem;
+    margin-top: 10rem;
     list-style: none;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
