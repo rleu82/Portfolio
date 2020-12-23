@@ -10,14 +10,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Source Sans Pro`,
-            variants: [`300`, `400`, `700`],
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: `Source Sans Pro`,
+              variants: [`300`, `400`, `700`],
+            },
+          ],
+        },
       },
     },
     'gatsby-plugin-styled-components',
