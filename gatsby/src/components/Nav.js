@@ -16,7 +16,7 @@ const NavStyles = styled.nav`
     }
   }
   ul {
-    margin-top: 10rem;
+    margin-top: 7rem;
     list-style: none;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
