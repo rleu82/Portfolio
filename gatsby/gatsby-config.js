@@ -16,7 +16,15 @@ module.exports = {
           google: [
             {
               family: `Source Sans Pro`,
-              variants: [`300`, `400`, `700`],
+              variants: [`300`, `400`, `500`, `600`, `700`],
+            },
+            {
+              family: `Merriweather`,
+              variants: [`300`, `400`, `500`, `600`, `700`],
+            },
+            {
+              family: `Montserrat`,
+              variants: [`300`, `400`, `500`, `600`, `700`],
             },
           ],
         },
@@ -25,7 +33,6 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sitemap',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
   ],
