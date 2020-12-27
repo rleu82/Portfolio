@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const Typography = createGlobalStyle`
 
   html {
-    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     color: var(--black);
     font-weight: 400;
   }
@@ -13,7 +13,7 @@ const Typography = createGlobalStyle`
   }
 
   h1,h2,h3,h4,h5,h6 {
-    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Karla', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     font-weight: 600;
     margin: 0;
   }

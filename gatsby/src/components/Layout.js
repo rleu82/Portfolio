@@ -9,8 +9,8 @@ import GlobalStyles from '../styles/GlobalStyles';
 import Typography from '../styles/Typography';
 
 const SiteStyles = styled.div`
-  max-width: 1100px;
-  margin: 2rem auto 2rem auto;
+  /* max-width: 1100px; */
+  /* margin: 2rem auto 2rem auto; */
 `;
 
 export default function Layout({ children }) {

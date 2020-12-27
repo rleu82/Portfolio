@@ -3,7 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
   :root {
     --blue: #1080D0;
-    --black: #2E2E2E;
+    --darkerblue: #3066BE;
+    --black: #202020;
     --white: #fff;
     --grey: #efefef;
     /* width of website */
@@ -12,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     font-size: 10px;
+    line-height: 1.5;
   }
 
   body {
