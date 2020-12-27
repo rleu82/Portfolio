@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const ContactFormStyles = styled.section`
   margin: 0 2rem;
   .contactHeader {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
   form {
     display: flex;
@@ -18,7 +18,7 @@ const ContactFormStyles = styled.section`
       border: 1px solid #d9d9d9;
       border-radius: 5px;
       padding: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
     textarea {
       font-size: 0.8em;
@@ -48,6 +48,9 @@ const ContactFormStyles = styled.section`
       clip: rect(0, 0, 0, 0);
       white-space: nowrap;
       border-width: 0;
+    }
+    .contact-submit {
+      border-radius: 30px;
     }
   }
 `;
@@ -82,7 +85,9 @@ export default function ContactForm() {
           <span>Message</span>
           <textarea name="message" id="message" placeholder="Your Message" />
         </label>
-        <button type="submit">Send</button>
+        <button type="submit" className="contact-submit">
+          Send
+        </button>
       </form>
     </ContactFormStyles>
   );

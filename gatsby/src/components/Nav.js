@@ -24,6 +24,7 @@ const NavStyles = styled.nav`
     align-items: center;
     justify-items: center;
   }
+}
 `;
 
 const NavInnerStyles = styled.div`

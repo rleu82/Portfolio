@@ -23,8 +23,8 @@ module.exports = {
               variants: [`300`, `400`, `500`, `600`, `700`],
             },
             {
-              family: `Montserrat`,
-              variants: [`300`, `400`, `500`, `600`, `700`],
+              family: `Vollkorn`,
+              variants: [`400`],
             },
           ],
         },
