@@ -19,7 +19,7 @@ module.exports = {
               variants: [`300`, `400`, `500`, `600`, `700`],
             },
             {
-              family: `Merriweather`,
+              family: `Karla`,
               variants: [`300`, `400`, `500`, `600`, `700`],
             },
             {
