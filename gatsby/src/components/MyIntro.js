@@ -1,12 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {
-  FaGithub,
-  FaTwitter,
-  FaDev,
-  FaLinkedinIn,
-  FaInstagram,
-} from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaDev, FaLinkedinIn } from 'react-icons/fa';
 
 const MyIntroStyles = styled.section`
   width: 100%;
