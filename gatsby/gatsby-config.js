@@ -1,4 +1,8 @@
-module.exports = {
+import dotenv from 'dotenv';
+
+dotenv.config({ path: '.env' });
+
+export default {
   plugins: [
     {
       resolve: 'gatsby-source-sanity',
@@ -9,27 +13,27 @@ module.exports = {
         token: process.env.SANITY_TOKEN,
       },
     },
-    {
-      resolve: `gatsby-plugin-webfonts`,
-      options: {
-        fonts: {
-          google: [
-            {
-              family: `Source Sans Pro`,
-              variants: [`300`, `400`, `500`, `600`, `700`],
-            },
-            {
-              family: `Karla`,
-              variants: [`300`, `400`, `500`, `600`, `700`],
-            },
-            {
-              family: `Vollkorn`,
-              variants: [`400`],
-            },
-          ],
-        },
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-webfonts`,
+    //   options: {
+    //     fonts: {
+    //       google: [
+    //         {
+    //           family: `Source Sans Pro`,
+    //           variants: [`300`, `400`, `500`, `600`, `700`],
+    //         },
+    //         {
+    //           family: `Karla`,
+    //           variants: [`300`, `400`, `500`, `600`, `700`],
+    //         },
+    //         {
+    //           family: `Vollkorn`,
+    //           variants: [`400`],
+    //         },
+    //       ],
+    //     },
+    //   },
+    // },
     'gatsby-plugin-styled-components',
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
