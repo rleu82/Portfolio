@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Info from '../components/Info';
 import MyIntro from '../components/MyIntro';
+import Projects from '../components/Projects';
 
 const FlexSite = styled.div`
   display: flex;
@@ -15,6 +16,7 @@ export default function Homepage() {
   return (
     <FlexSite>
       <MyIntro />
+      <Projects />
       <Info />
     </FlexSite>
   );
