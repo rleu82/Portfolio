@@ -17,7 +17,8 @@ export default {
             name: 'name',
         },
         prepare: (selection) => {
-            const {name} = selection
+            const {name} = selection;
+            console.log(name)
             return {
             title: name,
         }

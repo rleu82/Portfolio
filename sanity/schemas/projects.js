@@ -7,18 +7,14 @@ export default {
     fields: [
         {
             name: 'name',
-            title: 'Project Name',
+            title: 'Project Title',
             type: 'string',
             description: 'Name of the Project',
         },
         {
-            name: 'slug',
-            title: 'Slug / Page Name',
-            type: 'slug',
-            options: {
-                source: 'name',
-                maxLength: 100,
-            },
+            name: 'githubLink',
+            title: 'Github Link',
+            type: 'string',
         },
         {
             name: 'image',
@@ -33,7 +29,12 @@ export default {
             title: 'Tech Stack',
             type: 'array',
             of: [{ type: 'reference', to: [{ type: 'tech'}]}],
-        }
+        },
+        {
+            name: 'projectDescription',
+            title: 'Project Description',
+            type: 'text',
+        },
     ],
     preview: {
         select: {
